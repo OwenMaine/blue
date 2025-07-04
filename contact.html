@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Blue & Gray Trailer Manufacturing</title>
+    <meta name="description" content="Contact Blue & Gray Trailer Manufacturing in Sanford, FL for a custom quote or questions. Call (407) 323-3547 or visit us at 2341 Celery Ave.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body x-data="{ 'isMenuOpen': false }">
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Blue & Gray</a>
+            <nav class="main-nav" :class="{ 'is-open': isMenuOpen }">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trailers.html">Trailers</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" @click="isMenuOpen = !isMenuOpen">
+                <i class="fas" :class="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container" data-aos="fade-up">
+                <h1>Get In Touch</h1>
+                <p>Ready for a quote? Have a question? We're here to help.</p>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-details" data-aos="fade-right">
+                        <h3 class="contact-heading">Visit or Call Us</h3>
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p>2341 Celery Ave, Sanford, FL 32771</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p><a href="tel:4073233547">(407) 323-3547</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Business Hours</strong>
+                                <p>Mon - Fri: 8:00 AM – 5:00 PM<br>Saturday: By Appointment Only</p>
+                            </div>
+                        </div>
+
+                        <div class="map-container">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.613127591937!2d-81.229431384914!3d28.76077998236779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e713f0b2d30e2d%3A0x1b9a3e3b9e4a7b7!2s2341%20Celery%20Ave%2C%20Sanford%2C%20FL%2032771%2C%20USA!5e0!3m2!1sen!2s!4v1672886058249!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container" data-aos="fade-left" data-aos-delay="100">
+                        <h3 class="contact-heading">Send Us a Message</h3>
+                        <form class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="trailer_type">Trailer Type of Interest</label>
+                                <select id="trailer_type" name="trailer_type">
+                                    <option value="none" selected disabled>-- Select a Type --</option>
+                                    <option value="utility">Utility Trailer</option>
+                                    <option value="flatbed">Flatbed / Equipment</option>
+                                    <option value="enclosed">Enclosed Trailer</option>
+                                    <option value="custom">Custom Build</option>
+                                    <option value="other">Other / General Question</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Blue & Gray Trailer Mfg.</h4>
+                    <p>2341 Celery Ave,<br>Sanford, FL 32771</p>
+                    <p><strong>Phone:</strong> <a href="tel:4073233547">(407) 323-3547</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="trailers.html">Trailers</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                     <h4 class="footer-heading">Business Hours</h4>
+                    <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p>Saturday: By Appointment</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Blue & Gray Trailer Manufacturing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

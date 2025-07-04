@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Blue & Gray Trailer Manufacturing</title>
+    <meta name="description" content="View our gallery of high-quality custom, utility, flatbed, and enclosed trailers in action on job sites across Florida.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body x-data="{ 'isMenuOpen': false }">
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Blue & Gray</a>
+            <nav class="main-nav" :class="{ 'is-open': isMenuOpen }">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trailers.html">Trailers</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" @click="isMenuOpen = !isMenuOpen">
+                <i class="fas" :class="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container" data-aos="fade-up">
+                <h1>In The Field</h1>
+                <p>See our trailers put to the test on job sites across Florida and beyond.</p>
+            </div>
+        </section>
+
+        <section class="gallery-section section-padding" x-data="{ activeCategory: 'all' }">
+            <div class="container">
+                <div class="gallery-filters" data-aos="fade-up">
+                    <button @click="activeCategory = 'all'" :class="{ 'active': activeCategory === 'all' }">All</button>
+                    <button @click="activeCategory = 'utility'" :class="{ 'active': activeCategory === 'utility' }">Utility</button>
+                    <button @click="activeCategory = 'flatbed'" :class="{ 'active': activeCategory === 'flatbed' }">Flatbed</button>
+                    <button @click="activeCategory = 'enclosed'" :class="{ 'active': activeCategory === 'enclosed' }">Enclosed</button>
+                    <button @click="activeCategory = 'custom'" :class="{ 'active': activeCategory === 'custom' }">Custom</button>
+                </div>
+
+                <div class="image-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid-item" x-show="activeCategory === 'all' || activeCategory === 'flatbed'" data-category="flatbed">
+                        <a href="images/project-1.jpg" data-lightbox="field-gallery" data-title="Heavy-duty flatbed hauling construction equipment.">
+                            <img src="images/project-1.jpg" alt="Flatbed trailer on a construction site">
+                            <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                        </a>
+                    </div>
+                    <div class="grid-item" x-show="activeCategory === 'all' || activeCategory === 'utility'" data-category="utility">
+                        <a href="images/project-2.jpg" data-lightbox="field-gallery" data-title="Utility trailer for a professional landscaping crew.">
+                            <img src="images/project-2.jpg" alt="Utility trailer with landscaping gear">
+                             <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                        </a>
+                    </div>
+                    <div class="grid-item" x-show="activeCategory === 'all' || activeCategory === 'enclosed'" data-category="enclosed">
+                        <a href="images/project-3.jpg" data-lightbox="field-gallery" data-title="Enclosed cargo trailer protecting valuable tools.">
+                            <img src="images/project-3.jpg" alt="Enclosed trailer at a work location">
+                             <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                        </a>
+                    </div>
+                    <div class="grid-item" x-show="activeCategory === 'all' || activeCategory === 'custom'" data-category="custom">
+                        <a href="images/gallery-custom-1.jpg" data-lightbox="field-gallery" data-title="Custom-built trailer with specialized racks.">
+                            <img src="images/gallery-custom-1.jpg" alt="Custom built trailer with special features">
+                             <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                        </a>
+                    </div>
+                    <div class="grid-item" x-show="activeCategory === 'all' || activeCategory === 'flatbed'" data-category="flatbed">
+                        <a href="images/gallery-flatbed-1.jpg" data-lightbox="field-gallery" data-title="Gooseneck flatbed trailer ready for a heavy haul.">
+                            <img src="images/gallery-flatbed-1.jpg" alt="Gooseneck flatbed trailer">
+                             <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                        </a>
+                    </div>
+                    <div class="grid-item" x-show="activeCategory === 'all' || activeCategory === 'utility'" data-category="utility">
+                        <a href="images/gallery-utility-1.jpg" data-lightbox="field-gallery" data-title="Tandem axle utility trailer with high mesh sides.">
+                            <img src="images/gallery-utility-1.jpg" alt="Tandem axle utility trailer">
+                             <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Blue & Gray Trailer Mfg.</h4>
+                    <p>2341 Celery Ave,<br>Sanford, FL 32771</p>
+                    <p><strong>Phone:</strong> <a href="tel:4073233547">(407) 323-3547</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="trailers.html">Trailers</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                     <h4 class="footer-heading">Business Hours</h4>
+                    <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p>Saturday: By Appointment</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Blue & Gray Trailer Manufacturing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

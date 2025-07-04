@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trailers | Blue & Gray Trailer Manufacturing</title>
+    <meta name="description" content="Explore our lineup of high-quality utility, flatbed, enclosed, gooseneck, and custom trailers. Built with 100% American Steel in Sanford, FL.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body x-data="{ 'isMenuOpen': false }">
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Blue & Gray</a>
+            <nav class="main-nav" :class="{ 'is-open': isMenuOpen }">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trailers.html" class="active">Trailers</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" @click="isMenuOpen = !isMenuOpen">
+                <i class="fas" :class="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container" data-aos="fade-up">
+                <h1>Our Trailer Models</h1>
+                <p>Engineered for durability and performance. Browse our standard models or contact us for a custom build.</p>
+            </div>
+        </section>
+
+        <section class="trailers-grid-section section-padding">
+            <div class="container">
+                <div class="trailers-grid">
+
+                    <div class="trailer-card" data-aos="fade-up">
+                        <img src="images/trailer-utility.jpg" alt="Utility Trailer" class="trailer-card-img">
+                        <div class="trailer-card-content">
+                            <h3 class="trailer-card-title">Utility Trailers</h3>
+                            <ul class="trailer-specs">
+                                <li><strong>Size Range:</strong> 10' - 20'</li>
+                                <li><strong>Axles:</strong> Single or Tandem</li>
+                                <li><strong>Typical Use:</strong> Landscaping, General Hauling</li>
+                                <li><strong>Options:</strong> High sides, ramps, toolboxes</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="trailer-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/trailer-flatbed.jpg" alt="Flatbed Trailer" class="trailer-card-img">
+                        <div class="trailer-card-content">
+                            <h3 class="trailer-card-title">Flatbed Equipment Trailers</h3>
+                            <ul class="trailer-specs">
+                                <li><strong>Size Range:</strong> 16' - 30'</li>
+                                <li><strong>Axles:</strong> Tandem or Triple</li>
+                                <li><strong>Typical Use:</strong> Heavy equipment, construction</li>
+                                <li><strong>Options:</strong> Dovetails, mega ramps, winch plates</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="trailer-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/trailer-enclosed.jpg" alt="Enclosed Cargo Trailer" class="trailer-card-img">
+                        <div class="trailer-card-content">
+                            <h3 class="trailer-card-title">Enclosed Cargo Trailers</h3>
+                            <ul class="trailer-specs">
+                                <li><strong>Size Range:</strong> 12' - 24'</li>
+                                <li><strong>Axles:</strong> Single or Tandem</li>
+                                <li><strong>Typical Use:</strong> Secure transport, mobile workshop</li>
+                                <li><strong>Options:</strong> Side doors, e-tracks, custom shelving</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="trailer-card" data-aos="fade-up">
+                        <img src="images/trailer-gooseneck.jpg" alt="Gooseneck Trailer" class="trailer-card-img">
+                        <div class="trailer-card-content">
+                            <h3 class="trailer-card-title">Gooseneck Trailers</h3>
+                            <ul class="trailer-specs">
+                                <li><strong>Size Range:</strong> 25' - 40'</li>
+                                <li><strong>Axles:</strong> Heavy-Duty Tandem</li>
+                                <li><strong>Typical Use:</strong> Hotshot hauling, agriculture</li>
+                                <li><strong>Options:</strong> Deck-over, hydraulic jacks</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+                        </div>
+                    </div>
+                    
+                    <div class="trailer-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/trailer-car-hauler.jpg" alt="Car Hauler Trailer" class="trailer-card-img">
+                        <div class="trailer-card-content">
+                            <h3 class="trailer-card-title">Car Haulers</h3>
+                            <ul class="trailer-specs">
+                                <li><strong>Size Range:</strong> 16' - 22'</li>
+                                <li><strong>Axles:</strong> Tandem</li>
+                                <li><strong>Typical Use:</strong> Transporting cars, trucks, UTVs</li>
+                                <li><strong>Options:</strong> Steel or wood deck, rock guards</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="trailer-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/trailer-dump.jpg" alt="Dump Trailer" class="trailer-card-img">
+                        <div class="trailer-card-content">
+                            <h3 class="trailer-card-title">Dump Trailers</h3>
+                            <ul class="trailer-specs">
+                                <li><strong>Size Range:</strong> 12' - 16'</li>
+                                <li><strong>Axles:</strong> Tandem</li>
+                                <li><strong>Typical Use:</strong> Debris removal, material transport</li>
+                                <li><strong>Options:</strong> Tarp kits, spreader gates, high sides</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-strip">
+            <div class="container text-center" data-aos="fade-up">
+                <h2 class="cta-title">Don't See What You Need?</h2>
+                <p class="cta-text">If you can dream it, we can build it. Our team specializes in custom fabrications to your exact specifications.</p>
+                <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-cogs"></i> Design Your Custom Trailer</a>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Blue & Gray Trailer Mfg.</h4>
+                    <p>2341 Celery Ave,<br>Sanford, FL 32771</p>
+                    <p><strong>Phone:</strong> <a href="tel:4073233547">(407) 323-3547</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="trailers.html">Trailers</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                     <h4 class="footer-heading">Business Hours</h4>
+                    <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p>Saturday: By Appointment</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Blue & Gray Trailer Manufacturing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

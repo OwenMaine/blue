@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Blue & Gray Trailer Manufacturing</title>
+    <meta name="description" content="Learn about the history, values, and craftsmanship behind Blue & Gray Trailer Manufacturing in Sanford, FL.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body x-data="{ 'isMenuOpen': false }">
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Blue & Gray</a>
+            <nav class="main-nav" :class="{ 'is-open': isMenuOpen }">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="trailers.html">Trailers</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" @click="isMenuOpen = !isMenuOpen">
+                <i class="fas" :class="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container" data-aos="fade-up">
+                <h1>Forged in Florida: Our Story</h1>
+                <p>More than just steel and welds—we're built on a foundation of integrity.</p>
+            </div>
+        </section>
+
+        <section class="history-timeline section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-aos="fade-up">Decades of Dedication</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">1998</div>
+                            <h3 class="timeline-title">The Beginning</h3>
+                            <p>Founded by master welders with a singular vision: to build trailers that outlast the competition. Our first workshop opened right here in Sanford.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2005</div>
+                            <h3 class="timeline-title">Expansion of a Craft</h3>
+                            <p>We expanded our Celery Avenue facility, adding advanced fabrication tools and doubling our production capacity to meet growing demand from Florida's professionals.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2012</div>
+                            <h3 class="timeline-title">Custom Builds Perfected</h3>
+                            <p>Recognizing that one size doesn't fit all, we launched our dedicated custom manufacturing division, working directly with clients to engineer tailored solutions.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">Today</div>
+                            <h3 class="timeline-title">Florida's Trusted Name</h3>
+                            <p>Blue & Gray stands as a benchmark for quality and reliability, proudly serving contractors, farmers, and haulers with 100% American-made trailers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="factory-gallery section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title text-center" data-aos="fade-up">Inside Our Workshop</h2>
+                <p class="section-intro" data-aos="fade-up">Where raw steel is transformed into rugged, road-ready equipment by the hands of skilled craftsmen.</p>
+                <div class="photo-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="photo-item">
+                        <img src="images/21.jpg" alt="Welder working on a trailer frame">
+                        <div class="photo-caption"></div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/25.jpg" alt="Trailer assembly line">
+                        <div class="photo-caption"></div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/24.jpg" alt="The Blue & Gray manufacturing team">
+                        <div class="photo-caption"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="core-values section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-aos="fade-up">Our Core Values</h2>
+                <div class="features-grid">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon"><i class="fas fa-hammer"></i></div>
+                        <h3 class="feature-title">Uncompromising Craftsmanship</h3>
+                        <p>Every cut, weld, and finish is executed with precision and an obsessive attention to detail.</p>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="feature-title">Engineered for Durability</h3>
+                        <p>We build for the real world, ensuring your investment is tough, reliable, and ready for any job.</p>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3 class="feature-title">Down-to-Earth Service</h3>
+                        <p>We're your partners in hauling. Honest advice and dependable support are guaranteed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Blue & Gray Trailer Mfg.</h4>
+                    <p>2341 Celery Ave,<br>Sanford, FL 32771</p>
+                    <p><strong>Phone:</strong> <a href="tel:4073233547">(407) 323-3547</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="trailers.html">Trailers</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                     <h4 class="footer-heading">Business Hours</h4>
+                    <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p>Saturday: By Appointment</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Blue & Gray Trailer Manufacturing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
